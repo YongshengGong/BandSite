@@ -15,8 +15,8 @@
         &__list {
             width: 100%;
             list-style: none;
-            padding: 0;
-            margin: 0;
+            padding-left: 0;
+            margin-bottom: 0;
             @include flex(row, center, center);
         }
 
@@ -24,13 +24,13 @@
             width: 50%;
             text-align: center;
             padding-bottom: 1rem;
-
+            
             &:first-child {
                 border-bottom: 0.3rem solid white;
             }
 
             &:last-child {
-                border-bottom: 0.3rem solid white;
+                border-bottom: 0.3rem solid black;
             }
 
         }
