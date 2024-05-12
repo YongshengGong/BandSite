@@ -184,6 +184,20 @@ body {
     width: 100%;
     height: 35vh;
   }
+  .photo {
+    width: 100%;
+  }
+  .photo__title {
+    margin-left: 2rem;
+  }
+  .photo__container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .photo__container > * {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .about {
@@ -206,6 +220,25 @@ body {
     gap: 3rem;
     word-spacing: 0.3rem;
     line-height: 1.5rem;
+  }
+  .photo {
+    width: 100%;
+  }
+  .photo__title {
+    margin-left: 3rem;
+  }
+  .photo__container {
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .photo__container > * {
+    width: 30%;
   }
 }
 @media (min-width: 1280px) {
@@ -232,5 +265,24 @@ body {
     gap: 3rem;
     word-spacing: 0.3rem;
     line-height: 1.5rem;
+  }
+  .photo {
+    width: 100%;
+  }
+  .photo__title {
+    margin-left: 4rem;
+  }
+  .photo__container {
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .photo__container > * {
+    width: 30%;
   }
 }/*# sourceMappingURL=bio.css.map */
