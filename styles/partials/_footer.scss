@@ -1,0 +1,96 @@
+@use "./mixins" as *;
+
+@include mobile {
+    .footer {
+        background-color: black;
+        color: white;
+        padding: 0 2rem;
+        .tablet-desktop-bansite{
+            display:none;
+        }
+        & span {
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        &__agent {
+            list-style: none;
+            padding-left: 0;
+        }
+    }
+}
+
+@include tablet {
+    .footer {
+        width:100%;
+        background-color: black;
+        color: white;
+        padding: 3rem 2rem;
+        position: relative;
+        margin-top: 2rem;
+        line-height: 2rem;
+        &__title-icons-container{
+            @include flex(row,space-around,center);
+            & div{
+                width:30%;
+                text-align: left;
+            }
+            & span{
+                width:20%;
+                text-align: left;
+            }
+        }
+        & span {
+            display: block;
+            margin-bottom: 1rem;
+        }
+        &__title {
+            width:25%;
+            margin: 0;
+            font-size: 2rem;
+        }
+        &__agent {
+            list-style: none;
+            padding-left: 0;
+            @include flex(row,space-around,center);
+            gap:6rem;
+        }
+      
+    }
+}
+
+@include desktop {
+    .footer {
+        background-color: black;
+        color: white;
+        padding: 3rem 2rem;
+        position: relative;
+        margin-top: 2rem;
+        line-height: 2rem;
+        &__title-icons-container{
+            @include flex(row,center,center)
+        }
+        & span {
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        &__icons {
+            position: absolute;
+            top: 50px;
+            left: 255px;
+        }
+
+        &__title {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        &__agent {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            gap: 2rem;
+        }
+    }
+}
