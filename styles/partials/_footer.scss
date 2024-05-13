@@ -1,16 +1,25 @@
 @use "./mixins" as *;
+@use "./variables" as *;
 
 @include mobile {
     .footer {
-        background-color: black;
+        font-size:$mobile-main-footer-font-size;
+        line-height:$mobile-main-footer-line-height;
+        font-weight:$mobile-main-footer-font-weight;
+        background-color:#323232;
         color: white;
         padding: 0 2rem;
-        .tablet-desktop-bansite{
-            display:none;
+        .icon-title-container{
+            &>div{
+                & *{
+                    margin-right:1rem;
+                }
+            }
         }
         & span {
             display: block;
-            margin-bottom: 1rem;
+            margin-bottom: 0rem;
+            padding-bottom:2rem;
         }
 
         &__agent {
@@ -22,8 +31,20 @@
 
 @include tablet {
     .footer {
+        .icon-title-container{
+            @include flex(row,space-between,center);
+            &>div{
+                width:33%;
+                & *{
+                    margin-right:2rem;
+                }
+            }
+        }
+        font-size:$desktop-tablet-footer-font-size;
+        line-height:$desktop-tablet-footer-line-height;
+        font-weight:$desktop-tablet-footer-font-weight;
         width:100%;
-        background-color: black;
+        background-color:#323232;
         color: white;
         padding: 3rem 2rem;
         position: relative;
@@ -55,13 +76,27 @@
             @include flex(row,space-around,center);
             gap:6rem;
         }
-      
+      .mobile-bandsite{
+        display: none;
+      }
     }
 }
 
 @include desktop {
     .footer {
-        background-color: black;
+        .icon-title-container{
+            @include flex(row,space-between,center);
+            &>div{
+                width:53%;
+                & *{
+                    margin-right:2rem;
+                }
+            }
+        }
+        font-size:$desktop-tablet-footer-font-size;
+        line-height:$desktop-tablet-footer-line-height;
+        font-weight:$desktop-tablet-footer-font-weight;
+        background-color:#323232;
         color: white;
         padding: 3rem 2rem;
         position: relative;
@@ -91,6 +126,9 @@
             padding-left: 0;
             display: flex;
             gap: 2rem;
+        }
+        .mobile-bandsite{
+            display:none;
         }
     }
 }

@@ -7,18 +7,34 @@
 
 @include mobile {
     .about {
+        font-size:$mobile-main-footer-font-size;
+        line-height:$mobile-main-footer-line-height;
+        font-weight:$mobile-main-footer-font-weight;
         width: 100%;
         padding: 0 2rem;
-
+        &__title{
+            font-size:$mobile-header-font-size;
+            line-height:$mobile-header-line-height;
+            font-weight:$mobile-header-font-weight;
+        }
         &__image {
             width: 100%;
             height: 35vh;
         }
+        &__paragraph-title{
+           font-size:$mobile-subheader-font-size;
+           line-height:$mobile-subheader-line-height;
+           font-weight:$mobile-subheader-font-weight;
+        }
     }
     .photo {
+        background-color:#FAFAFA;
         width:100%;
         &__title{
             margin-left:2rem;
+            font-size:$mobile-header-font-size;
+            line-height:$mobile-header-line-height;
+            font-weight:$mobile-header-font-weight;
         }
         &__container{
             width:100%;
@@ -33,6 +49,10 @@
 
 @include tablet {
     .about {
+        margin-top:-60px;
+        font-size:$desktop-tablet-main-font-size;
+        line-height:$desktop-tablet-main-line-height;
+        font-weight:$desktop-tablet-main-font-weight;
         width: 100%;
         padding: 0 7rem;
 
@@ -43,6 +63,9 @@
 
         &__title {
             margin-left: -50px;
+            font-size:$desktop-tablet-sectionHeader-font-size;
+            line-height:$desktop-tablet-sectionHeader-line-height;
+            font-weight:$desktop-tablet-sectionHeader-font-weight;
         }
 
         &__paragraph {
@@ -52,11 +75,21 @@
             word-spacing: 0.3rem;
             line-height: 1.5rem;
         }
+        &__paragraph-title{
+            font-size:$desktop-tablet-subHeader-font-size;
+            line-height:$desktop-tablet-subHeader-line-height;
+            font-weight:$desktop-tablet-subHeader-font-weight;
+        }
     }
     .photo {
+        background-color:#FAFAFA;
         width:100%;
         &__title{
             margin-left:3rem;
+            padding-top:3rem;
+            font-size:$desktop-tablet-sectionHeader-font-size;
+            line-height:$desktop-tablet-sectionHeader-line-height;
+            font-weight:$desktop-tablet-sectionHeader-font-weight;
         }
         &__container{
             width:100%;
@@ -73,16 +106,22 @@
 
 @include desktop {
     .about {
+        font-size:$desktop-tablet-main-font-size;
+        line-height:$desktop-tablet-main-line-height;
+        font-weight:$desktop-tablet-main-font-weight;
         width: 100%;
-        padding: 0 7rem;
+        padding: 0 15rem;
 
         &__image {
             width: 100%;
-            height: 80vh;
+            height: 70vh;
         }
 
         &__title {
             margin-left: -50px;
+            font-size:$desktop-tablet-sectionHeader-font-size;
+            line-height:$desktop-tablet-sectionHeader-line-height;
+            font-weight:$desktop-tablet-sectionHeader-font-weight;
         }
         &__quotes{
             width:80%;
@@ -95,15 +134,25 @@
             word-spacing: 0.3rem;
             line-height: 1.5rem;
         }
+        &__paragraph-title{
+            font-size:$desktop-tablet-subHeader-font-size;
+            line-height:$desktop-tablet-subHeader-line-height;
+            font-weight:$desktop-tablet-subHeader-font-weight;
+        }
     }
     .photo {
+        background-color:#FAFAFA;
         width:100%;
         &__title{
-            margin-left:4rem;
+            margin-left:8.5rem;
+            padding-top:2rem;
+            font-size:$desktop-tablet-sectionHeader-font-size;
+            line-height:$desktop-tablet-sectionHeader-line-height;
+            font-weight:$desktop-tablet-sectionHeader-font-weight;
         }
         &__container{
             width:100%;
-            padding:0 2rem;
+            padding:0 7rem;
             @include flex(flex,center,center);
             flex-wrap: wrap;
             gap:2rem;

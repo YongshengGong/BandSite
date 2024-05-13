@@ -1,8 +1,9 @@
 @use "./mixins" as *;
+@use "./variables" as *;
 
 @include mobile {
     .header {
-        background-color: black;
+        background-color:#323232;
         color: white;
         @include flex(column, center, center);
         padding-top: 1rem;
@@ -10,6 +11,9 @@
 
         &__title {
             margin: 0;
+            font-size:$mobile-header-font-size;
+            line-height:$mobile-header-line-height;
+            font-weight:$mobile-header-font-weight;
         }
 
         &__list {
@@ -24,13 +28,15 @@
             width: 50%;
             text-align: center;
             padding-bottom: 1rem;
-            
+            font-size:$mobile-subheader-font-size;
+            line-height:$mobile-subheader-line-height;
+            font-weight:$mobile-subheader-font-weight;
             &:first-child {
                 border-bottom: 0.3rem solid white;
             }
 
             &:last-child {
-                border-bottom: 0.3rem solid black;
+                border-bottom: 0.3rem solid #323232;
             }
 
         }
@@ -39,14 +45,16 @@
 
 @include tablet {
     .header {
-        height: 10vh;
-        background-color: black;
+        height: 15vh;
+        background-color:#323232;
         color: white;
         @include flex(row, flex-start, center);
-
         &__title {
             margin-left: 3rem;
             margin-right: 4rem;
+            font-size:$desktop-tablet-sectionHeader-font-size;
+            line-height:$desktop-tablet-sectionHeader-line-height;
+            font-weight:$desktop-tablet-sectionHeader-font-weight;
         }
 
         &__list {
@@ -60,14 +68,19 @@
             width: 100%;
             height: 100%;
             text-align: center;
+            font-size:$desktop-tablet-subHeader-font-size;
+            line-height:$desktop-tablet-subHeader-line-height;
+            font-weight:$desktop-tablet-subHeader-font-weight;
             @include flex(row, center, center);
 
             &:first-child {
+                margin-left:5rem;
                 border-bottom: 0.3rem solid white;
             }
 
             &:last-child {
-                border-bottom: 0.3rem solid black;
+                margin-left:5rem;
+                border-bottom: 0.3rem solid #323232;
             }
         }
     }
@@ -76,13 +89,16 @@
 @include desktop {
     .header {
         height: 10vh;
-        background-color: black;
+        background-color:#323232;
         color: white;
         @include flex(row, flex-start, center);
 
         &__title {
             margin-left: 10rem;
             margin-right: 0rem;
+            font-size:$desktop-tablet-sectionHeader-font-size;
+            line-height:$desktop-tablet-sectionHeader-line-height;
+            font-weight:$desktop-tablet-sectionHeader-font-weight;
         }
 
         &__list {
@@ -97,13 +113,15 @@
             height: 100%;
             text-align: center;
             @include flex(row, center, center);
-      
+            font-size:$desktop-tablet-subHeader-font-size;
+            line-height:$desktop-tablet-subHeader-line-height;
+            font-weight:$desktop-tablet-subHeader-font-weight;
             &:first-child {
                 border-bottom: 0.3rem solid white;
             }
 
             &:last-child {
-                border-bottom: 0.3rem solid black;
+                border-bottom: 0.3rem solid #323232     ;
             }
         }
     }
