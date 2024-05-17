@@ -130,102 +130,112 @@
 
 
 
-    .header {
-        background-color:#323232;
-        color: white;
-        @include flex(column, center, center);
-        padding-top: 1rem;
-        width: 100%;
-        @include tablet{
-            padding-top: 0;
-            height: 15vh;
-            @include flex(row, flex-start, center);
-        }
-        @include desktop{
-            padding-top: 0;
-            height: 10vh;
-            @include flex(row, flex-start, center);
-        }
-        &__title {
-            margin: 0;
-            font-size:$mobile-header-font-size;
-            line-height:$mobile-header-line-height;
-            font-weight:$mobile-header-font-weight;
-            @include tablet{
-                margin-left: 3rem;
-                margin-right: 4rem;
-                font-size:$desktop-tablet-sectionHeader-font-size;
-                line-height:$desktop-tablet-sectionHeader-line-height;
-                font-weight:$desktop-tablet-sectionHeader-font-weight;
-            }
-            @include desktop{
-                margin-left: 10rem;
-                margin-right: 0rem;
-                font-size:$desktop-tablet-sectionHeader-font-size;
-                line-height:$desktop-tablet-sectionHeader-line-height;
-                font-weight:$desktop-tablet-sectionHeader-font-weight;
-            }
-        }
-        &__list {
-            width: 100%;
-            list-style: none;
-            padding-left: 0;
-            margin-bottom: 0;
-            @include flex(row, center, center);
-            @include tablet{
-                width: 23%;
-                height: 100%;
-                padding-left: 3rem;
-                margin-bottom: 1rem;
-            }
-            @include desktop{
-                width: 23%;
-                height: 100%;
-                padding-left: 3rem;
-                margin-bottom: 1rem;
-            }
+.header {
+    background-color: #323232;
+    color: white;
+    @include flex(column, center, center);
+    padding-top: 1rem;
+    width: 100%;
+
+    @include tablet {
+        padding-top: 0;
+        height: 15vh;
+        @include flex(row, flex-start, center);
+    }
+
+    @include desktop {
+        padding-top: 0;
+        height: 10vh;
+        @include flex(row, flex-start, center);
+    }
+
+    &__title {
+        margin: 0;
+        font-size: $mobile-header-font-size;
+        line-height: $mobile-header-line-height;
+        font-weight: $mobile-header-font-weight;
+
+        @include tablet {
+            margin-left: 3rem;
+            margin-right: 4rem;
+            font-size: $desktop-tablet-sectionHeader-font-size;
+            line-height: $desktop-tablet-sectionHeader-line-height;
+            font-weight: $desktop-tablet-sectionHeader-font-weight;
         }
 
-        &__item {
-            width: 50%;
-            text-align: center;
-            padding-bottom: 1rem;
-            font-size:$mobile-subheader-font-size;
-            line-height:$mobile-subheader-line-height;
-            font-weight:$mobile-subheader-font-weight;
-            &:first-child {
-                border-bottom: 0.3rem solid white;
-            }
-
-            &:last-child {
-                border-bottom: 0.3rem solid #323232;
-            }
-            @include tablet{
-                width: 100%;
-                height: 100%;
-                font-size:$desktop-tablet-subHeader-font-size;
-                line-height:$desktop-tablet-subHeader-line-height;
-                font-weight:$desktop-tablet-subHeader-font-weight;
-                @include flex(row, center, center);
-                padding-bottom: 0;
-                &:first-child {
-                    margin-left:5rem;
-                }
-    
-                &:last-child {
-                    margin-left:5rem;
-                }
-            }
-            @include desktop{
-                width: 100%;
-                height: 100%;
-                @include flex(row, center, center);
-                font-size:$desktop-tablet-subHeader-font-size;
-                line-height:$desktop-tablet-subHeader-line-height;
-                font-weight:$desktop-tablet-subHeader-font-weight;
-                padding-bottom: 0;
-            }
+        @include desktop {
+            margin-left: 10rem;
+            margin-right: 0rem;
+            font-size: $desktop-tablet-sectionHeader-font-size;
+            line-height: $desktop-tablet-sectionHeader-line-height;
+            font-weight: $desktop-tablet-sectionHeader-font-weight;
         }
     }
 
+    &__list {
+        width: 100%;
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        @include flex(row, center, center);
 
+        @include tablet {
+            width: 23%;
+            height: 100%;
+            padding-left: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        @include desktop {
+            width: 23%;
+            height: 100%;
+            padding-left: 3rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__item {
+        width: 50%;
+        text-align: center;
+        padding-bottom: 1rem;
+        font-size: $mobile-subheader-font-size;
+        line-height: $mobile-subheader-line-height;
+        font-weight: $mobile-subheader-font-weight;
+
+        &:first-child {
+            border-bottom: 0.3rem solid white;
+        }
+
+        &:last-child {
+            border-bottom: 0.3rem solid #323232;
+        }
+
+        @include tablet {
+            width: 100%;
+            height: 100%;
+            font-size: $desktop-tablet-subHeader-font-size;
+            line-height: $desktop-tablet-subHeader-line-height;
+            font-weight: $desktop-tablet-subHeader-font-weight;
+            @include flex(row, center, center);
+            padding-bottom: 0;
+
+            &:first-child {
+                margin-left: 5rem;
+            }
+
+            &:last-child {
+                margin-left: 5rem;
+            }
+        }
+
+        @include desktop {
+            width: 100%;
+            height: 100%;
+            @include flex(row, center, center);
+            font-size: $desktop-tablet-subHeader-font-size;
+            line-height: $desktop-tablet-subHeader-line-height;
+            font-weight: $desktop-tablet-subHeader-font-weight;
+            padding-bottom: 0;
+        }
+    }
+}
