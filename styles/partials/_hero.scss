@@ -1,7 +1,6 @@
 @use "./mixins" as *;
 @use "./variables" as *;
 
-@include mobile {
     .hero {
         width: 100%;
         height: 40vh;
@@ -9,55 +8,35 @@
         background-position: center;
         background-size: cover;
         @include flex(row, flex-start, center);
-
+        @include tablet{
+            height: 100vh;
+            background-position-y: -90px;
+            background-repeat: no-repeat;
+        }
+        @include desktop{
+            height: 100vh;
+            background-position: center;
+        }
         &__title {
             margin: 0 1.5rem;
             color: white;
             font-size:$mobile-header-font-size;
             line-height:$mobile-header-line-height;
             font-weight: $mobile-header-font-weight;
+            @include tablet{
+                margin: 0 5rem;
+                padding-bottom:5rem;
+                font-size:90px;
+                line-height:$desktop-tablet-pageHeader-line-height;
+                font-weight:$desktop-tablet-pageHeader-font-weight;
+            }
+            @include desktop{
+                margin: 0 8rem;
+                padding-bottom:5rem;
+                font-size:70px;
+                line-height:$desktop-tablet-pageHeader-line-height;
+                font-weight:$desktop-tablet-pageHeader-font-weight;
+            }
         }
     }
-}
 
-@include tablet {
-    .hero {
-        width: 100%;
-        height: 100vh;
-        background-image: url("../../assets/images/hero-bio.jpg");
-        background-position-y: -90px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        @include flex(row, flex-start, center);
-
-        &__title {
-            margin: 0 5rem;
-            padding-bottom:5rem;
-            color: white;
-            font-size:90px;
-            line-height:$desktop-tablet-pageHeader-line-height;
-            font-weight:$desktop-tablet-pageHeader-font-weight;
-
-        }
-    }
-}
-
-@include desktop {
-    .hero {
-        width: 100%;
-        height: 100vh;
-        background-image: url("../../assets/images/hero-bio.jpg");
-        background-position: center;
-        background-size: cover;
-        @include flex(row, flex-start, center);
-
-        &__title {
-            margin: 0 8rem;
-            color: white;
-            padding-bottom:5rem;
-            font-size:70px;
-            line-height:$desktop-tablet-pageHeader-line-height;
-            font-weight:$desktop-tablet-pageHeader-font-weight;
-        }
-    }
-}

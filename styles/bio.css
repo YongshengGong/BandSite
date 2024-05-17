@@ -274,69 +274,56 @@ body {
     display: none;
   }
 }
-@media (max-width: 767px) {
-  .hero {
-    width: 100%;
-    height: 40vh;
-    background-image: url("../../assets/images/hero-bio.jpg");
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .hero__title {
-    margin: 0 1.5rem;
-    color: white;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 700;
-  }
+.hero {
+  width: 100%;
+  height: 40vh;
+  background-image: url("../../assets/images/hero-bio.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .hero {
-    width: 100%;
     height: 100vh;
-    background-image: url("../../assets/images/hero-bio.jpg");
     background-position-y: -90px;
-    background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
   }
+}
+@media (min-width: 1280px) {
+  .hero {
+    height: 100vh;
+    background-position: center;
+  }
+}
+.hero__title {
+  margin: 0 1.5rem;
+  color: white;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
   .hero__title {
     margin: 0 5rem;
     padding-bottom: 5rem;
-    color: white;
     font-size: 90px;
     line-height: 68px;
     font-weight: 700;
   }
 }
 @media (min-width: 1280px) {
-  .hero {
-    width: 100%;
-    height: 100vh;
-    background-image: url("../../assets/images/hero-bio.jpg");
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-  }
   .hero__title {
     margin: 0 8rem;
-    color: white;
     padding-bottom: 5rem;
     font-size: 70px;
     line-height: 68px;
     font-weight: 700;
   }
 }
+
 @media (max-width: 767px) {
   .about {
     font-size: 13px;
