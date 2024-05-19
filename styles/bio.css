@@ -29,7 +29,7 @@ body {
 }
 .header {
   background-color: #323232;
-  color: white;
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -167,7 +167,7 @@ body {
   font-family: avenir;
   font-style: normal;
   background-color: #323232;
-  color: white;
+  color: #FFFFFF;
   padding: 2rem 2rem;
   display: flex;
   flex-direction: column;
@@ -335,7 +335,7 @@ body {
 }
 .hero__title {
   margin: 0 1.5rem;
-  color: white;
+  color: #FFFFFF;
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
