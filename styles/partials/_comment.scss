@@ -2,27 +2,33 @@
 @use "./variables" as *;
 @use "./typography";
 
-.comment{
-    @include tablet{
+.comment {
+    @include tablet {}
 
-    }
-    @include desktop{
+    @include desktop {}
 
-    }
-   &__input{
-    @include tablet{
 
-    }
-    @include desktop{
-        
-    }
-   }
-   &__display{
-    @include tablet{
+    &__input {
+        @include tablet {}
 
+        @include desktop {}
+
+        &-profile {
+            height:50px;
+            width:50px;
+            object-fit:cover;
+            object-position: 20% 0;
+            border-radius: 50px;
+            @include tablet {}
+
+            @include desktop {}
+        }
     }
-    @include desktop{
-        
+
+
+    &__display {
+        @include tablet {}
+
+        @include desktop {}
     }
-   }
 }

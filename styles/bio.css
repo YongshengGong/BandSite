@@ -365,6 +365,15 @@ body {
   }
 }
 
+.comment__input-profile {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 20% 0;
+     object-position: 20% 0;
+  border-radius: 50px;
+}
 .about {
   font-size: 13px;
   line-height: 18px;
