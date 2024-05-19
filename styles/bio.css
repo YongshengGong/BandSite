@@ -319,7 +319,7 @@ body {
 .hero {
   width: 100%;
   height: 40vh;
-  background-image: url("../../assets/images/hero-bio.jpg");
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../../assets/images/hero-bio.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
