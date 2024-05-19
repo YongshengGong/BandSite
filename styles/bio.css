@@ -127,6 +127,7 @@ body {
 }
 .header__nav-item:last-child {
   border-bottom: 0.3rem solid #323232;
+  color: #E1E1E1;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .header__nav-item {
