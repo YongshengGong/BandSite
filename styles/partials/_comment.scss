@@ -1,0 +1,28 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+@use "./typography";
+
+.comment{
+    @include tablet{
+
+    }
+    @include desktop{
+
+    }
+   &__input{
+    @include tablet{
+
+    }
+    @include desktop{
+        
+    }
+   }
+   &__display{
+    @include tablet{
+
+    }
+    @include desktop{
+        
+    }
+   }
+}

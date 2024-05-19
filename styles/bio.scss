@@ -5,7 +5,7 @@
 @use "./partials/mixins" as *;
 @use "./partials/variables" as *;
 @use "./partials/typography";
-
+@use "./partials/comment";
 
 .about {
     font-size: $mobile-main-footer-font-size;
