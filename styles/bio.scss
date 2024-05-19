@@ -15,6 +15,7 @@
     font-style:normal;
     width: 100%;
     padding: 0 2rem;
+    color:#323232;
 
     @include tablet {
         font-size: $desktop-tablet-main-font-size;
@@ -110,6 +111,7 @@
     background-color: #FAFAFA;
     width: 100%;
     padding: 0 2rem;
+    color:#323232;
     @include tablet {}
 
     @include desktop {}
