@@ -4,17 +4,19 @@
 @use "./partials/hero";
 @use "./partials/mixins" as *;
 @use "./partials/variables" as *;
+@use "./partials/typography";
 
 
 .about {
     font-size: $mobile-main-footer-font-size;
     line-height: $mobile-main-footer-line-height;
     font-weight: $mobile-main-footer-font-weight;
+    font-family:avenir;
+    font-style:normal;
     width: 100%;
     padding: 0 2rem;
 
     @include tablet {
-        margin-top: -60px;
         font-size: $desktop-tablet-main-font-size;
         line-height: $desktop-tablet-main-line-height;
         font-weight: $desktop-tablet-main-font-weight;
@@ -107,28 +109,25 @@
 .photo {
     background-color: #FAFAFA;
     width: 100%;
-
+    padding: 0 2rem;
     @include tablet {}
 
     @include desktop {}
 
     &__title {
-        margin-left: 2rem;
+        // margin-left: 2rem;
         font-size: $mobile-header-font-size;
         line-height: $mobile-header-line-height;
         font-weight: $mobile-header-font-weight;
-
+        // border:1px solid red;
+        // margin-top:0;
         @include tablet {
-            margin-left: 3rem;
-            padding-top: 3rem;
             font-size: $desktop-tablet-sectionHeader-font-size;
             line-height: $desktop-tablet-sectionHeader-line-height;
             font-weight: $desktop-tablet-sectionHeader-font-weight;
         }
 
         @include desktop {
-            margin-left: 8.5rem;
-            padding-top: 2rem;
             font-size: $desktop-tablet-sectionHeader-font-size;
             line-height: $desktop-tablet-sectionHeader-line-height;
             font-weight: $desktop-tablet-sectionHeader-font-weight;
@@ -137,7 +136,6 @@
 
     &__container {
         width: 100%;
-        padding: 0 2rem;
 
         &>* {
             width: 100%;
@@ -145,24 +143,24 @@
         }
 
         @include tablet {
-            padding: 0 2rem;
-            @include flex(flex, center, center);
+            @include flex(flex, flex-start, center);
             flex-wrap: wrap;
             gap: 2rem;
 
             &>* {
                 width: 30%;
+                margin-bottom: 0rem;
             }
         }
 
         @include desktop {
-            padding: 0 7rem;
-            @include flex(flex, center, center);
+            @include flex(flex, flex-start, center);
             flex-wrap: wrap;
             gap: 2rem;
 
             &>* {
                 width: 30%;
+                margin-bottom: 0rem;
             }
         }
     }

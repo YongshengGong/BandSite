@@ -1,5 +1,6 @@
 @use "./mixins" as *;
 @use "./variables" as *;
+@use "./typography";
 
     .hero {
         width: 100%;
@@ -23,6 +24,8 @@
             font-size:$mobile-header-font-size;
             line-height:$mobile-header-line-height;
             font-weight: $mobile-header-font-weight;
+            font-family:avenir;
+            font-style:normal;
             @include tablet{
                 margin: 0 5rem;
                 padding-bottom:5rem;

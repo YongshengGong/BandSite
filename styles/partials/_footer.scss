@@ -1,5 +1,6 @@
 @use "./mixins" as *;
 @use "./variables" as *;
+@use "./typography";
 // .footer {
 //     font-size:$mobile-main-footer-font-size;
 //     line-height:$mobile-main-footer-line-height;
@@ -160,6 +161,8 @@
     font-size: $mobile-main-footer-font-size;
     line-height: $mobile-main-footer-line-height;
     font-weight: $mobile-main-footer-font-weight;
+    font-family:avenir;
+    font-style:normal;
     background-color: #323232;
     color: white;
     padding: 2rem 2rem;

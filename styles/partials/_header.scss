@@ -1,5 +1,6 @@
 @use "./mixins" as *;
 @use "./variables" as *;
+@use "./typography";
 
 // @include mobile {
 //     .header {
@@ -154,6 +155,8 @@
         font-size: $mobile-header-font-size;
         line-height: $mobile-header-line-height;
         font-weight: $mobile-header-font-weight;
+        font-family:avenir;
+        font-style:normal;
 
         @include tablet {
             margin-left: 3rem;
@@ -201,6 +204,8 @@
         font-size: $mobile-subheader-font-size;
         line-height: $mobile-subheader-line-height;
         font-weight: $mobile-subheader-font-weight;
+        font-family:avenir;
+        font-style:normal;
 
         &:first-child {
             border-bottom: 0.3rem solid white;
