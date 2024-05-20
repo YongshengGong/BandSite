@@ -34,7 +34,10 @@ let arr = [
 let shows = document.querySelector(".shows");
 let tickets = document.createElement("section");
 tickets.classList.add("shows__tickets");
-
+let showsTitle=document.createElement("h1");
+showsTitle.classList.add("shows__title");
+showsTitle.textContent="Shows";
+shows.appendChild(showsTitle);
 
 for (let i = 0; i < arr.length; i++) {
     let ticket = document.createElement("article");
@@ -71,9 +74,14 @@ for (let i = 0; i < arr.length; i++) {
     eventLocation.appendChild(eventLocationTitle);
     eventLocation.appendChild(eventLocationContent);
 
+    let button = document.createElement("button");
+    button.classList.add("shows__tickets-ticket-button");
+    button.textContent="BUY TICKETS";
+
     ticket.appendChild(date);
     ticket.appendChild(venue);
     ticket.appendChild(eventLocation);
+    ticket.appendChild(button);
     dateContent.textContent = arr[i].date;
     venueContent.textContent = arr[i].venue;
     eventLocationContent.textContent = arr[i].eventLocation;
