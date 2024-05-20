@@ -105,7 +105,7 @@
     color:$primary-color;
     @include tablet {}
 
-    @include desktop {}
+    @include desktop {padding: 0 10rem;}
 
     &__title {
         // margin-left: 2rem;
@@ -118,12 +118,14 @@
             font-size: $desktop-tablet-sectionHeader-font-size;
             line-height: $desktop-tablet-sectionHeader-line-height;
             font-weight: $desktop-tablet-sectionHeader-font-weight;
+            padding-top:2rem;
         }
 
         @include desktop {
             font-size: $desktop-tablet-sectionHeader-font-size;
             line-height: $desktop-tablet-sectionHeader-line-height;
             font-weight: $desktop-tablet-sectionHeader-font-weight;
+            padding-top:2rem;
         }
     }
 
@@ -139,7 +141,7 @@
             @include flex(flex, flex-start, center);
             flex-wrap: wrap;
             gap: 2rem;
-
+            padding-bottom:2rem;
             &>* {
                 width: 30%;
                 margin-bottom: 0rem;
@@ -150,7 +152,7 @@
             @include flex(flex, flex-start, center);
             flex-wrap: wrap;
             gap: 2rem;
-
+            padding-bottom:2rem;
             &>* {
                 width: 30%;
                 margin-bottom: 0rem;

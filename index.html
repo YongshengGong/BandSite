@@ -16,11 +16,11 @@
             <h1 class="header__title">BANDSITE</h1>
         </a>
         <nav class="header__nav">
-        <ul class="header__nav-list">
-            <li class="header__nav-item header__nav-item--bio">Biography</li>
-            <li class="header__nav-item header__nav-item--show">Shows</li>
-        </ul>
-    </nav>
+            <ul class="header__nav-list">
+                <li class="header__nav-item header__nav-item--bio">Biography</li>
+                <li class="header__nav-item header__nav-item--show">Shows</li>
+            </ul>
+        </nav>
     </header>
     <section class="hero">
         <h2 class="hero__title">The Bees Knees</h2>
@@ -59,7 +59,7 @@
             </div>
         </section>
         <section class="photo">
-            <h2  class="photo__title">Photo Gallery</h2>
+            <h2 class="photo__title">Photo Gallery</h2>
             <div class="photo__container">
                 <img src="./assets/images/Photo-gallery-1.jpg" alt="Photo-gallery-1">
                 <img src="./assets/images/Photo-gallery-2.jpg" alt="Photo-gallery-2">
@@ -73,22 +73,24 @@
             </div>
         </section>
         <section class="comment">
-          <section class="comment__input">
-               <img class="comment__input-profile" src="./assets/images/Mohan-muruge.jpg" alt="profile-picture-alt">
-               <form class="comment__input-form">
-                 <label>
-                    NAME
-                    <input type="text" placeholder="Enter your name">
-                 </label>
-                 <label>
-                    COMMENT
-                    <input type="text" placeholder="Add a new comment">
-                 </label>
-               </form>
-          </section>
-          <section class="comment__display">
+            <h1 class="comment__title">Join the Conversation</h1>
+            <section class="comment__input">
+                <img class="comment__input-profile" src="./assets/images/Mohan-muruge.jpg" alt="profile-picture-alt">
+                <form class="comment__input-form">
+                    <label class="comment__input-form-label">
+                        <span class="comment__input-form-label-title">NAME</span>
+                        <input class="comment__input-form-label-field comment__input-form-label-field--name" type="text" placeholder="Enter your name">
+                    </label>
+                    <label class="comment__input-form-label">
+                        <span class="comment__input-form-label-title">COMMENT</span>
+                        <textarea class="comment__input-form-label-field comment__input-form-label-field--comment" type="text" placeholder="Add a new comment"></textarea>
+                    </label>
+                    <button class="comment__input-form-button">COMMENT</button>
+                </form>
+            </section>
+            <section class="comment__display">
 
-          </section>
+            </section>
         </section>
     </main>
     <footer class="footer">
