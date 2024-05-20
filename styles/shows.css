@@ -55,11 +55,21 @@ body {
 }
 .shows__tickets {
   width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .shows__tickets-ticket {
   width: 100%;
   border-bottom: 1px solid #E1E1E1;
   padding: 1rem;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .shows__tickets-ticket {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .shows__tickets-ticket-date {
   display: flex;
@@ -67,6 +77,11 @@ body {
   justify-content: center;
   align-items: left;
   margin-bottom: 1rem;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .shows__tickets-ticket-date {
+    width: 25%;
+  }
 }
 .shows__tickets-ticket-date-title {
   color: #AFAFAF;
@@ -84,6 +99,11 @@ body {
   align-items: left;
   margin-bottom: 1rem;
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .shows__tickets-ticket-venue {
+    width: 25%;
+  }
+}
 .shows__tickets-ticket-venue-title {
   color: #AFAFAF;
   font-size: 13px;
@@ -96,6 +116,11 @@ body {
   justify-content: center;
   align-items: left;
   margin-bottom: 1rem;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .shows__tickets-ticket-eventLocation {
+    width: 25%;
+  }
 }
 .shows__tickets-ticket-eventLocation-title {
   color: #AFAFAF;
@@ -114,9 +139,16 @@ body {
 .shows__tickets-ticket-button:hover {
   background-color: #000000;
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .shows__tickets-ticket-button {
+    width: 25%;
+  }
+}
 .shows__tickets-ticket:hover {
   background-color: #FAFAFA;
+  border-radius: 4px;
 }
 .shows__tickets-ticket:active {
   background-color: #E1E1E1;
+  border-radius: 4px;
 }/*# sourceMappingURL=shows.css.map */

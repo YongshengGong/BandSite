@@ -7,27 +7,32 @@ let arr = [
     {
         date: "Tue Sept 17 2024",
         venue: "Pier 3 East",
-        eventLocation: "San Francisco, CA"
+        eventLocation: "San Francisco, CA",
+        hideTitle:"hide"
     },
     {
         date: "Sat Oct 12 2024",
         venue: "View Lounge",
-        eventLocation: "San Francisco, CA"
+        eventLocation: "San Francisco, CA",
+        hideTitle:"hide"
     },
     {
         date: "Sat Nov 16 2024",
         venue: "Hyatt Agency",
-        eventLocation: "San Francisco, CA"
+        eventLocation: "San Francisco, CA",
+        hideTitle:"hide"
     },
     {
         date: "Fri Nov 29 2024",
         venue: "Moscow Center",
-        eventLocation: "San Francisco, CA"
+        eventLocation: "San Francisco, CA",
+        hideTitle:"hide"
     },
     {
         date: "Wed Dec 18 2024",
         venue: "Press Club ",
-        eventLocation: "San Francisco, CA"
+        eventLocation: "San Francisco, CA",
+        hideTitle:"hide"
     },
 ];
 
@@ -48,6 +53,7 @@ for (let i = 0; i < arr.length; i++) {
     date.classList.add("shows__tickets-ticket-date");
     let dateTitle = document.createElement("span");
     dateTitle.classList.add("shows__tickets-ticket-date-title");
+    dateTitle.classList.add(arr[i].hideTitle);
     dateTitle.textContent = "DATE";
     let dateContent = document.createElement("span");
     dateContent.classList.add("shows__tickets-ticket-date-content");
@@ -58,6 +64,7 @@ for (let i = 0; i < arr.length; i++) {
     venue.classList.add("shows__tickets-ticket-venue");
     let venueTitle = document.createElement("span");
     venueTitle.classList.add("shows__tickets-ticket-venue-title");
+    venueTitle.classList.add(arr[i].hideTitle);
     venueTitle.textContent = "VENUE";
     let venueContent = document.createElement("span");
     venueContent.classList.add("shows__tickets-ticket-venue-content");
@@ -68,6 +75,7 @@ for (let i = 0; i < arr.length; i++) {
     eventLocation.classList.add("shows__tickets-ticket-eventLocation");
     let eventLocationTitle = document.createElement("span");
     eventLocationTitle.classList.add("shows__tickets-ticket-eventLocation-title");
+    eventLocationTitle.classList.add(arr[i].hideTitle);
     eventLocationTitle.textContent = "LOCATION";
     let eventLocationContent = document.createElement("span");
     eventLocationContent.classList.add("shows__tickets-ticket-eventLocation-content");

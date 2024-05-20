@@ -40,13 +40,24 @@
     }
     &__tickets{
       width:100%;
+      padding-left: 1rem;
+      padding-right:1rem;
       &-ticket{
         width:100%;
         border-bottom:1px solid #E1E1E1;
         padding:1rem;
+        @include tablet{
+            @include flex(row,space-between,center);
+        }
         &-date{
             @include flex(column,center,left);
             margin-bottom:1rem;
+            @include tablet{
+                width:25%;
+             }
+             @include desktop{
+                 
+             }
             &-title{
                 color:#AFAFAF;
                 font-size:$mobile-main-footer-font-size;
@@ -60,6 +71,12 @@
         &-venue{
             @include flex(column,center,left);
             margin-bottom:1rem;
+            @include tablet{
+                width:25%;
+             }
+             @include desktop{
+                 
+             }
             &-title{
                 color:#AFAFAF;
                 font-size:$mobile-main-footer-font-size;
@@ -70,6 +87,12 @@
         &-eventLocation{
             @include flex(column,center,left);
             margin-bottom:1rem;
+            @include tablet{
+                width:25%;
+             }
+             @include desktop{
+                 
+             }
             &-title{
                 color:#AFAFAF;
                 font-size:$mobile-main-footer-font-size;
@@ -87,12 +110,20 @@
             &:hover{
                 background-color: #000000;
             }
+            @include tablet{
+               width:25%;
+            }
+            @include desktop{
+                
+            }
         }
         &:hover{
             background-color: #FAFAFA;
+            border-radius: 4px;
         }
         &:active{
             background-color: #E1E1E1;
+            border-radius: 4px;
         }
       }
     }
