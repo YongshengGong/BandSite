@@ -44,6 +44,8 @@
 
         @include desktop {
             @include flex(row, center, flex-start);
+            margin:auto;
+            width:30%;
         }
 
         &-profile {
@@ -79,7 +81,7 @@
             }
 
             @include desktop {
-                width: 30%;
+                width: 100%;
             }
 
             &-label {
@@ -197,7 +199,9 @@
             @include flex(column,center,center);
         }
 
-        @include desktop {}
+        @include desktop {
+            @include flex(column,center,center);
+        }
 
         &-post {
             @include flex(row, space-between, center);
@@ -207,7 +211,8 @@
                 width:70%;
             }
             @include desktop{
-                
+                @include flex(row,center,center);
+                width:30%;
             }
             &-profile {
                 height: 30px;
@@ -224,7 +229,8 @@
                     left: -0.5rem;
                 }
                 @include desktop{
-
+                    top: -2.3rem;
+                    left: -0.5rem;
                 }
             }
             &-content{
@@ -233,7 +239,7 @@
                     width:100%;
                 }
                 @include desktop{
-
+                    width:100%;
                 }
                 &-title-date-container{
                     @include flex(row,space-between,center);
