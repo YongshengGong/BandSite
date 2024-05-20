@@ -9,8 +9,8 @@
     padding-right:2rem;
 
     @include tablet {
-    padding-left:0;
-    padding-right:0;
+    padding-left:0rem;
+    padding-right:0rem;
     }
 
     @include desktop {
@@ -38,6 +38,8 @@
         border-bottom:1px solid #E1E1E1;
         @include tablet {
             @include flex(row, center, flex-start);
+            margin:auto;
+            width:70%;
         }
 
         @include desktop {
@@ -73,7 +75,7 @@
             @include flex(column, center, center);
 
             @include tablet {
-                width: 70%;
+                width: 100%;
             }
 
             @include desktop {
@@ -191,13 +193,22 @@
 
     &__display {
         margin-bottom:1rem;
-        @include tablet {}
+        @include tablet {
+            @include flex(column,center,center);
+        }
 
         @include desktop {}
 
         &-post {
             @include flex(row, space-between, center);
             border-bottom:1px solid #E1E1E1;
+            @include tablet{
+                @include flex(row,center,center);
+                width:70%;
+            }
+            @include desktop{
+                
+            }
             &-profile {
                 height: 30px;
                 width: 30px;
@@ -208,9 +219,22 @@
                 position: relative;
                 top: -2.5rem;
                 left: 0.5rem;
+                @include tablet{
+                    top: -2rem;
+                    left: -0.5rem;
+                }
+                @include desktop{
+
+                }
             }
             &-content{
                 width:80%;
+                @include tablet{
+                    width:100%;
+                }
+                @include desktop{
+
+                }
                 &-title-date-container{
                     @include flex(row,space-between,center);
                     margin-top:1rem;
