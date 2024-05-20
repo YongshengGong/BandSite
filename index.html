@@ -81,16 +81,17 @@
                     <label class="comment__input-form-label">
                         <span class="comment__input-form-label-title">NAME</span>
                         <input class="comment__input-form-label-field comment__input-form-label-field--name" type="text"
-                            placeholder="Enter your name">
+                            placeholder="Enter your name" name="userName"/>
                     </label>
                     <label class="comment__input-form-label">
                         <span class="comment__input-form-label-title">COMMENT</span>
                         <textarea class="comment__input-form-label-field comment__input-form-label-field--comment"
-                            type="text" placeholder="Add a new comment"></textarea>
+                            type="text" placeholder="Add a new comment" name="textArea"></textarea>
                     </label>
-                    <button class="comment__input-form-button">COMMENT</button>
+                    <button class="comment__input-form-button" type="submit">COMMENT</button>
                 </form>
             </section>
+
             <section class="comment__display">
                 <article class="comment__display-post">
                     <img class="comment__display-post-profile" src="" alt="user-profile-picture-alt">

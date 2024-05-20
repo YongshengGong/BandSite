@@ -1,4 +1,4 @@
-let userCoomment = [
+let userComment = [
     {
         name: "Victor Pinto",
         timeStamp: "11/02/2023",
@@ -16,10 +16,58 @@ let userCoomment = [
     }
 ];
 
-const name=document.querySelector(".comment__display-post-content-title");
-const timeStamp=document.querySelector(".comment__display-post-content-date");
-const commentText=document.querySelector(".comment__display-post-content-paragraph");
-function addComment() {
+// const userName=document.querySelector(".comment__display-post-content-title");
+// const timeStamp=document.querySelector(".comment__display-post-content-date");
+// const commentText=document.querySelector(".comment__display-post-content-paragraph");
+// const titleDateContainer=document.querySelector(".comment__display-post-content-title-date-container");
+// const aside=document.querySelector(".comment__display-post-content");
+// const image=document.querySelector(".comment__display-post-profile");
+// const article=document.querySelector(".comment__display-post");
+const commentDisplay=document.querySelector(".comment__display");
 
+const form=document.querySelector(".comment__input-form");
+form.addEventListener("submit",e=>{
+    e.preventDefault();
+    const obj={
+        name:e.target.userName.value,
+        timeStamp:new Date().toLocaleDateString('en-US'),
+        commentText:e.target.textArea.value
+    };
+    userComment.push(obj);
+    addComment(userComment);
+})
+
+function addComment(arr) {
+commentDisplay.innerHTML = '';
+for(let i=0;i<arr.length;i++){
+ let userName=document.createElement("h3");
+ userName.classList.add("comment__display-post-content-title");
+ userName.textContent=arr[i].name;
+ let commentText=document.createElement("p");
+ commentText.classList.add("comment__display-post-content-paragraph");
+ commentText.textContent=arr[i].commentText;
+let date=document.createElement("span");
+date.classList.add("comment__display-post-content-date");
+date.textContent=arr[i].timeStamp;
+let titleDateContainer=document.createElement("section");
+titleDateContainer.classList.add("comment__display-post-content-title-date-container");
+titleDateContainer.appendChild(userName);
+titleDateContainer.appendChild(date);
+let aside=document.createElement("aside");
+aside.classList.add("comment__display-post-content");
+aside.appendChild(titleDateContainer);
+aside.appendChild(commentText);
+
+let image=document.createElement('img');
+image.classList.add("comment__display-post-profile");
+image.src="";
+image.alt="user-profile-picture-alt";
+
+let article=document.createElement("article");
+article.classList.add("comment__display-post");
+article.appendChild(image);
+article.appendChild(aside);
+
+commentDisplay.appendChild(article);
 }
-addComment();
+}
