@@ -41,4 +41,82 @@ body {
   font-size: 14px;
   font-weight: 600;
   line-height: 22px;
+}
+.shows {
+  width: 100%;
+  font-family: avenir;
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+.shows__title {
+  margin-left: 2rem;
+  margin-bottom: 0;
+  margin-top: 3rem;
+}
+.shows__tickets {
+  width: 100%;
+}
+.shows__tickets-ticket {
+  width: 100%;
+  border-bottom: 1px solid #E1E1E1;
+  padding: 1rem;
+}
+.shows__tickets-ticket-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-bottom: 1rem;
+}
+.shows__tickets-ticket-date-title {
+  color: #AFAFAF;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.shows__tickets-ticket-date-content {
+  font-weight: 600;
+}
+.shows__tickets-ticket-venue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-bottom: 1rem;
+}
+.shows__tickets-ticket-venue-title {
+  color: #AFAFAF;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.shows__tickets-ticket-eventLocation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-bottom: 1rem;
+}
+.shows__tickets-ticket-eventLocation-title {
+  color: #AFAFAF;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.shows__tickets-ticket-button {
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #323232;
+  border: 0;
+  border-radius: 4px;
+  height: 40px;
+}
+.shows__tickets-ticket-button:hover {
+  background-color: #000000;
+}
+.shows__tickets-ticket:hover {
+  background-color: #FAFAFA;
+}
+.shows__tickets-ticket:active {
+  background-color: #E1E1E1;
 }/*# sourceMappingURL=shows.css.map */
