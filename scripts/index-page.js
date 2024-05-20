@@ -33,7 +33,7 @@ form.addEventListener("submit",e=>{
         timeStamp:new Date().toLocaleDateString('en-US'),
         commentText:e.target.textArea.value
     };
-    userComment.push(obj);
+    userComment.unshift(obj);
     addComment(userComment);
 })
 

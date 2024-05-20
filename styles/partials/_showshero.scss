@@ -1,0 +1,23 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+@use "./typography";
+
+.shows-hero{
+    background-image: url("../../assets/images/hero-shows.jpg");
+    height:60vh;
+    background-position: center;
+    background-size: cover;
+    color:#FFFFFF;
+    font-family:avenir;
+    font-style: normal;
+    &__small-title{
+        margin:0;
+        font-size:$mobile-subheader-font-size;
+        font-weight: $mobile-subheader-font-weight;
+        line-height: $mobile-subheader-line-height;
+        @include tablet{
+        }
+        @include desktop{
+        }
+    }
+}

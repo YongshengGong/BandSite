@@ -125,8 +125,16 @@ body {
 .header__nav-item:first-child {
   border-bottom: 0.3rem solid white;
 }
+.header__nav-item:first-child > a {
+  text-decoration: none;
+  color: #E1E1E1;
+}
 .header__nav-item:last-child {
   border-bottom: 0.3rem solid #323232;
+  color: #E1E1E1;
+}
+.header__nav-item:last-child > a {
+  text-decoration: none;
   color: #E1E1E1;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -508,6 +516,7 @@ body {
 }
 .comment__input-form-label-field:focus {
   border: 1px solid #323232;
+  outline: none;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .comment__input-form-label-field {

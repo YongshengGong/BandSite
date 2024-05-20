@@ -1,1 +1,44 @@
-/*# sourceMappingURL=shows.css.map */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: avenir;
+  src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: avenir;
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf");
+  font-style: normal;
+  font-weight: 700;
+}
+.shows-hero {
+  background-image: url("../../assets/images/hero-shows.jpg");
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  color: #FFFFFF;
+  font-family: avenir;
+  font-style: normal;
+}
+.shows-hero__small-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}/*# sourceMappingURL=shows.css.map */
