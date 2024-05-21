@@ -15,6 +15,7 @@
     }
     @include desktop{
         height:100vh;
+        margin-bottom:4rem;
     }
     &__small-title{
         margin:0;
@@ -37,7 +38,7 @@
 
     }
     @include desktop{
-
+    @include flex(row,center,flex-start)
     }
     &__title{
        margin-left:2rem;
@@ -47,18 +48,27 @@
          margin-bottom: 3rem;
        }
        @include desktop{
-        
+        margin:-2rem;;
+        width:30%;    
+        text-align: center;  
        }
     }
     &__tickets{
       width:100%;
       padding-left: 1rem;
       padding-right:1rem;
+      @include desktop{
+        width:70%;
+        margin-right:4rem;
+      }
       &-ticket{
         width:100%;
         border-bottom:1px solid #E1E1E1;
         padding:1rem;
         @include tablet{
+            @include flex(row,space-between,center);
+        }
+        @include desktop{
             @include flex(row,space-between,center);
         }
         &-date{
@@ -68,7 +78,7 @@
                 width:25%;
              }
              @include desktop{
-                 
+                 width:30%;
              }
             &-title{
                 color:#AFAFAF;
@@ -87,7 +97,7 @@
                 width:25%;
              }
              @include desktop{
-                 
+                width:20%;
              }
             &-title{
                 color:#AFAFAF;
@@ -103,7 +113,7 @@
                 width:25%;
              }
              @include desktop{
-                 
+                width:20%;
              }
             &-title{
                 color:#AFAFAF;
@@ -126,7 +136,7 @@
                width:25%;
             }
             @include desktop{
-                
+                width:20%;
             }
         }
         &:hover{
@@ -143,12 +153,12 @@
 
 .visible{
     @include tablet{
-    //    margin-bottom:2rem;
-    //    margin-top:1rem;
        position: relative;
        bottom:2rem;
     }
     @include desktop{
+        position: relative;
+        bottom:2rem;
     } 
 }
 .hide{

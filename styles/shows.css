@@ -44,6 +44,7 @@ body {
 @media (min-width: 1280px) {
   .shows-hero {
     height: 100vh;
+    margin-bottom: 4rem;
   }
 }
 .shows-hero__small-title {
@@ -58,6 +59,14 @@ body {
   font-style: normal;
   margin-bottom: 1rem;
 }
+@media (min-width: 1280px) {
+  .shows {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
 .shows__title {
   margin-left: 2rem;
   margin-bottom: 0;
@@ -68,10 +77,23 @@ body {
     margin-bottom: 3rem;
   }
 }
+@media (min-width: 1280px) {
+  .shows__title {
+    margin: -2rem;
+    width: 30%;
+    text-align: center;
+  }
+}
 .shows__tickets {
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+@media (min-width: 1280px) {
+  .shows__tickets {
+    width: 70%;
+    margin-right: 4rem;
+  }
 }
 .shows__tickets-ticket {
   width: 100%;
@@ -79,6 +101,14 @@ body {
   padding: 1rem;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
+  .shows__tickets-ticket {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1280px) {
   .shows__tickets-ticket {
     display: flex;
     flex-direction: row;
@@ -96,6 +126,11 @@ body {
 @media (min-width: 768px) and (max-width: 1279px) {
   .shows__tickets-ticket-date {
     width: 25%;
+  }
+}
+@media (min-width: 1280px) {
+  .shows__tickets-ticket-date {
+    width: 30%;
   }
 }
 .shows__tickets-ticket-date-title {
@@ -119,6 +154,11 @@ body {
     width: 25%;
   }
 }
+@media (min-width: 1280px) {
+  .shows__tickets-ticket-venue {
+    width: 20%;
+  }
+}
 .shows__tickets-ticket-venue-title {
   color: #AFAFAF;
   font-size: 13px;
@@ -135,6 +175,11 @@ body {
 @media (min-width: 768px) and (max-width: 1279px) {
   .shows__tickets-ticket-eventLocation {
     width: 25%;
+  }
+}
+@media (min-width: 1280px) {
+  .shows__tickets-ticket-eventLocation {
+    width: 20%;
   }
 }
 .shows__tickets-ticket-eventLocation-title {
@@ -159,6 +204,11 @@ body {
     width: 25%;
   }
 }
+@media (min-width: 1280px) {
+  .shows__tickets-ticket-button {
+    width: 20%;
+  }
+}
 .shows__tickets-ticket:hover {
   background-color: #FAFAFA;
   border-radius: 4px;
@@ -174,6 +224,13 @@ body {
     bottom: 2rem;
   }
 }
+@media (min-width: 1280px) {
+  .visible {
+    position: relative;
+    bottom: 2rem;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1279px) {
   .hide {
     visibility: hidden;
