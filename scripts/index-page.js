@@ -28,6 +28,13 @@ const commentDisplay=document.querySelector(".comment__display");
 const form=document.querySelector(".comment__input-form");
 form.addEventListener("submit",e=>{
     e.preventDefault();
+    if(e.target.userName.value===""){
+      e.target.userName.style.borderColor="red";
+    }
+    else if(e.target.textArea.value===""){
+        e.target.textArea.style.borderColor="red";
+      }
+    else{
     const obj={
         name:e.target.userName.value,
         timeStamp:new Date().toLocaleDateString('en-US'),
@@ -37,6 +44,9 @@ form.addEventListener("submit",e=>{
     addComment(userComment);
     e.target.userName.value="";
     e.target.textArea.value="";
+    e.target.userName.style.borderColor="#E1E1E1";
+    e.target.textArea.style.borderColor="#E1E1E1";
+}
 })
 
 function addComment(arr) {
