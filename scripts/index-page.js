@@ -35,6 +35,8 @@ form.addEventListener("submit",e=>{
     };
     userComment.unshift(obj);
     addComment(userComment);
+    e.target.userName.value="";
+    e.target.textArea.value="";
 })
 
 function addComment(arr) {
