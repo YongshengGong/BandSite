@@ -2,7 +2,8 @@ let arr = [
     {
         date: "Mon Sept 09 2024",
         venue: "Ronald Lane",
-        eventLocation: "San Francisco, CA"
+        eventLocation: "San Francisco, CA",
+        hideTitle:"visible"
     },
     {
         date: "Tue Sept 17 2024",

@@ -10,6 +10,12 @@
     color:#FFFFFF;
     font-family:avenir;
     font-style: normal;
+    @include tablet{
+        height:90vh;
+    }
+    @include desktop{
+        height:100vh;
+    }
     &__small-title{
         margin:0;
         font-size:$mobile-subheader-font-size;
@@ -37,6 +43,12 @@
        margin-left:2rem;
        margin-bottom:0;
        margin-top:3rem;
+       @include tablet{
+         margin-bottom: 3rem;
+       }
+       @include desktop{
+        
+       }
     }
     &__tickets{
       width:100%;
@@ -129,11 +141,21 @@
     }
 }
 
-.hide{
+.visible{
     @include tablet{
-        display:none;
+    //    margin-bottom:2rem;
+    //    margin-top:1rem;
+       position: relative;
+       bottom:2rem;
     }
     @include desktop{
-        display:none;
+    } 
+}
+.hide{
+    @include tablet{
+        visibility: hidden;
+    }
+    @include desktop{
+        visibility:hidden;
     } 
 }
