@@ -3,13 +3,15 @@
 @use "./typography";
 
 .shows-hero{
-    background-image: url("../../assets/images/hero-shows.jpg");
+    // background-image: url("../../assets/images/hero-shows.jpg");
     height:60vh;
-    background-position: center;
-    background-size: cover;
     color:#FFFFFF;
     font-family:avenir;
     font-style: normal;
+    background:linear-gradient(rgba(50,50,50,0.5),rgba(50,50,50,0.5)),
+    url("../../assets/images/hero-shows.jpg");
+    background-position: center;
+    background-size: cover;
     @include tablet{
         height:90vh;
     }
