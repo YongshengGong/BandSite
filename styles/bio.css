@@ -117,7 +117,6 @@ body {
   padding-bottom: 1rem;
   font-size: 14px;
   line-height: 22px;
-  font-weight: 600;
   font-family: avenir;
   font-style: normal;
   height: 100%;
@@ -125,17 +124,28 @@ body {
 .header__nav-item:first-child {
   border-bottom: 0.3rem solid white;
 }
+.header__nav-item:first-child:hover {
+  border-bottom: 0.3rem solid white;
+}
 .header__nav-item:first-child > a {
   text-decoration: none;
   color: #E1E1E1;
 }
+.header__nav-item:first-child > a:hover {
+  color: #FFFFFF;
+}
 .header__nav-item:last-child {
   border-bottom: 0.3rem solid #323232;
-  color: #E1E1E1;
+}
+.header__nav-item:last-child:hover {
+  border-bottom: 0.3rem solid white;
 }
 .header__nav-item:last-child > a {
   text-decoration: none;
   color: #E1E1E1;
+}
+.header__nav-item:last-child > a:hover {
+  color: #FFFFFF;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .header__nav-item {

@@ -77,25 +77,35 @@
             padding-bottom: 1rem;
             font-size: $mobile-subheader-font-size;
             line-height: $mobile-subheader-line-height;
-            font-weight: $mobile-subheader-font-weight;
             font-family: avenir;
             font-style: normal;
             height: 100%;
 
             &:first-child {
                 border-bottom: 0.3rem solid white;
+                &:hover{
+                    border-bottom: 0.3rem solid white;
+                }
                 &>a{
                     text-decoration: none;
                     color:#E1E1E1;
+                    &:hover{
+                        color: #FFFFFF;
+                    }
                 }
             }
 
             &:last-child {
                 border-bottom: 0.3rem solid #323232;
-                color: #E1E1E1;
+                &:hover{
+                    border-bottom: 0.3rem solid white;
+                }
                 &>a{
                     text-decoration: none;
                     color:#E1E1E1;
+                    &:hover{
+                        color: #FFFFFF;
+                    }
                 }
             }
 

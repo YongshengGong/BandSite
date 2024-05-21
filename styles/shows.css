@@ -319,4 +319,12 @@ body {
   .hide {
     visibility: hidden;
   }
+}
+
+.header__nav-item.header__nav-item--bio {
+  border-bottom: 0.3rem solid #323232;
+}
+
+.header__nav-item.header__nav-item--show {
+  border-bottom: 0.3rem solid #FFFFFF;
 }/*# sourceMappingURL=shows.css.map */
