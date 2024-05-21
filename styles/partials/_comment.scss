@@ -34,7 +34,7 @@
     }
 
     &__input {
-        @include flex(row, space-between, flex-start);
+        @include flex(row, center, flex-start);
         border-bottom:1px solid #E1E1E1;
         @include tablet {
             @include flex(row, center, flex-start);
@@ -55,33 +55,35 @@
             object-position: 20% 0;
             border-radius: 50%;
             background-color: #E1E1E1;
-            position: relative;
-            top: 1.6rem;
-            left: 0.5rem;
+            // position: relative;
+            // top: 1.6rem;
+            // left: 0.5rem;
+            margin-top:1rem;
 
-            @include tablet {
-                position: relative;
-                top: 1.8rem;
-                left: -0.5rem;
-            }
+            // @include tablet {
+            //     position: relative;
+            //     top: 1.8rem;
+            //     left: -0.5rem;
+            // }
 
-            @include desktop {
-                position: relative;
-                top: 1.8rem;
-                left: -0.5rem;
-            }
+            // @include desktop {
+            //     position: relative;
+            //     top: 1.8rem;
+            //     left: -0.5rem;
+            // }
         }
 
         &-form {
             width: 80%;
             @include flex(column, center, center);
+            margin-left:2rem;
 
             @include tablet {
                 width: 100%;
             }
 
             @include desktop {
-                width: 100%;
+                width: 90%;
             }
 
             &-label {
@@ -204,14 +206,12 @@
         }
 
         &-post {
-            @include flex(row, space-between, center);
+            @include flex(row, center, flex-start);
             border-bottom:1px solid #E1E1E1;
             @include tablet{
-                @include flex(row,center,center);
                 width:70%;
             }
             @include desktop{
-                @include flex(row,center,center);
                 width:30%;
             }
             &-profile {
@@ -221,25 +221,18 @@
                 object-position: 20% 0;
                 border-radius: 50%;
                 background-color: #E1E1E1;
-                position: relative;
-                top: -2.5rem;
-                left: 0.5rem;
-                @include tablet{
-                    top: -2rem;
-                    left: -0.5rem;
-                }
-                @include desktop{
-                    top: -2.3rem;
-                    left: -0.5rem;
-                }
+                margin-top:1rem;
             }
             &-content{
                 width:80%;
+                margin-left:2rem;
                 @include tablet{
                     width:100%;
+                    margin-left:1.5rem;
                 }
                 @include desktop{
-                    width:100%;
+                    width:90%;
+                    margin-left:1.5rem;
                 }
                 &-title-date-container{
                     @include flex(row,space-between,center);

@@ -420,7 +420,7 @@ body {
 .comment__input {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   border-bottom: 1px solid #E1E1E1;
 }
@@ -453,23 +453,7 @@ body {
      object-position: 20% 0;
   border-radius: 50%;
   background-color: #E1E1E1;
-  position: relative;
-  top: 1.6rem;
-  left: 0.5rem;
-}
-@media (min-width: 768px) and (max-width: 1279px) {
-  .comment__input-profile {
-    position: relative;
-    top: 1.8rem;
-    left: -0.5rem;
-  }
-}
-@media (min-width: 1280px) {
-  .comment__input-profile {
-    position: relative;
-    top: 1.8rem;
-    left: -0.5rem;
-  }
+  margin-top: 1rem;
 }
 .comment__input-form {
   width: 80%;
@@ -477,6 +461,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 2rem;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .comment__input-form {
@@ -485,7 +470,7 @@ body {
 }
 @media (min-width: 1280px) {
   .comment__input-form {
-    width: 100%;
+    width: 90%;
   }
 }
 .comment__input-form-label {
@@ -616,25 +601,17 @@ body {
 .comment__display-post {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   border-bottom: 1px solid #E1E1E1;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .comment__display-post {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     width: 70%;
   }
 }
 @media (min-width: 1280px) {
   .comment__display-post {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     width: 30%;
   }
 }
@@ -647,33 +624,22 @@ body {
      object-position: 20% 0;
   border-radius: 50%;
   background-color: #E1E1E1;
-  position: relative;
-  top: -2.5rem;
-  left: 0.5rem;
-}
-@media (min-width: 768px) and (max-width: 1279px) {
-  .comment__display-post-profile {
-    top: -2rem;
-    left: -0.5rem;
-  }
-}
-@media (min-width: 1280px) {
-  .comment__display-post-profile {
-    top: -2.3rem;
-    left: -0.5rem;
-  }
+  margin-top: 1rem;
 }
 .comment__display-post-content {
   width: 80%;
+  margin-left: 2rem;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .comment__display-post-content {
     width: 100%;
+    margin-left: 1.5rem;
   }
 }
 @media (min-width: 1280px) {
   .comment__display-post-content {
-    width: 100%;
+    width: 90%;
+    margin-left: 1.5rem;
   }
 }
 .comment__display-post-content-title-date-container {
