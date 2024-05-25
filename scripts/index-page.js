@@ -16,13 +16,6 @@ let userComment = [
     }
 ];
 
-// const userName=document.querySelector(".comment__display-post-content-title");
-// const timeStamp=document.querySelector(".comment__display-post-content-date");
-// const commentText=document.querySelector(".comment__display-post-content-paragraph");
-// const titleDateContainer=document.querySelector(".comment__display-post-content-title-date-container");
-// const aside=document.querySelector(".comment__display-post-content");
-// const image=document.querySelector(".comment__display-post-profile");
-// const article=document.querySelector(".comment__display-post");
 const commentDisplay=document.querySelector(".comment__display");
 
 const form=document.querySelector(".comment__input-form");
