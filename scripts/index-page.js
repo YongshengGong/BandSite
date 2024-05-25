@@ -83,3 +83,4 @@ article.appendChild(aside);
 commentDisplay.appendChild(article);
 }
 }
+addComment(userComment);
