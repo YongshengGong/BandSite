@@ -111,7 +111,7 @@ for (let i = 0; i < res.length; i++) {
     ticket.appendChild(venue);
     ticket.appendChild(eventLocation);
     ticket.appendChild(button);
-    dateContent.textContent = res[i].date;
+    dateContent.textContent = new Date(res[i].date).toLocaleDateString("en-us",{weekday:"short",month:"short",day:"numeric",year:"numeric"}).replace(/,/g,"");
     venueContent.textContent = res[i].place;
     eventLocationContent.textContent = res[i].location;
 }
