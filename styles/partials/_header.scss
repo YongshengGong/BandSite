@@ -83,13 +83,16 @@
 
             &:first-child {
                 border-bottom: 0.3rem solid white;
-                &:hover{
+
+                &:hover {
                     border-bottom: 0.3rem solid white;
                 }
-                &>a{
+
+                &>a {
                     text-decoration: none;
-                    color:#E1E1E1;
-                    &:hover{
+                    color: #E1E1E1;
+
+                    &:hover {
                         color: #FFFFFF;
                     }
                 }
@@ -97,13 +100,16 @@
 
             &:last-child {
                 border-bottom: 0.3rem solid #323232;
-                &:hover{
+
+                &:hover {
                     border-bottom: 0.3rem solid white;
                 }
-                &>a{
+
+                &>a {
                     text-decoration: none;
-                    color:#E1E1E1;
-                    &:hover{
+                    color: #E1E1E1;
+
+                    &:hover {
                         color: #FFFFFF;
                     }
                 }

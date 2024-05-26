@@ -11,12 +11,13 @@
     font-size: $mobile-main-footer-font-size;
     line-height: $mobile-main-footer-line-height;
     font-weight: $mobile-main-footer-font-weight;
-    font-family:avenir;
-    font-style:normal;
+    font-family: avenir;
+    font-style: normal;
     width: 100%;
     padding: 0 2rem;
-    color:$primary-color;
+    color: $primary-color;
     background-color: #FFFFFF;
+
     @include tablet {
         font-size: $desktop-tablet-main-font-size;
         line-height: $desktop-tablet-main-line-height;
@@ -102,30 +103,31 @@
     background-color: #FAFAFA;
     width: 100%;
     padding: 0 2rem;
-    color:$primary-color;
+    color: $primary-color;
+
     @include tablet {}
 
-    @include desktop {padding: 0 10rem;}
+    @include desktop {
+        padding: 0 10rem;
+    }
 
     &__title {
-        // margin-left: 2rem;
         font-size: $mobile-header-font-size;
         line-height: $mobile-header-line-height;
         font-weight: $mobile-header-font-weight;
-        // border:1px solid red;
-        // margin-top:0;
+
         @include tablet {
             font-size: $desktop-tablet-sectionHeader-font-size;
             line-height: $desktop-tablet-sectionHeader-line-height;
             font-weight: $desktop-tablet-sectionHeader-font-weight;
-            padding-top:2rem;
+            padding-top: 2rem;
         }
 
         @include desktop {
             font-size: $desktop-tablet-sectionHeader-font-size;
             line-height: $desktop-tablet-sectionHeader-line-height;
             font-weight: $desktop-tablet-sectionHeader-font-weight;
-            padding-top:2rem;
+            padding-top: 2rem;
         }
     }
 
@@ -141,7 +143,8 @@
             @include flex(flex, flex-start, center);
             flex-wrap: wrap;
             gap: 2rem;
-            padding-bottom:2rem;
+            padding-bottom: 2rem;
+
             &>* {
                 width: 30%;
                 margin-bottom: 0rem;
@@ -152,7 +155,8 @@
             @include flex(flex, flex-start, center);
             flex-wrap: wrap;
             gap: 2rem;
-            padding-bottom:2rem;
+            padding-bottom: 2rem;
+
             &>* {
                 width: 30%;
                 margin-bottom: 0rem;
@@ -160,5 +164,3 @@
         }
     }
 }
-
-

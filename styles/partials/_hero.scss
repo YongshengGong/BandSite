@@ -2,42 +2,46 @@
 @use "./variables" as *;
 @use "./typography";
 
-    .hero {
-        height: 40vh;
-        background:linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)),
+.hero {
+    height: 40vh;
+    background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)),
         url("../../assets/images/hero-bio.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        @include flex(row, flex-start, center);
-        @include tablet{
-            height: 80vh;
-        }
-        @include desktop{
-            height: 100vh;
-        }
-        &__title {
-            margin: 0 1.5rem;
-            color: #FFFFFF;
-            font-size:$mobile-header-font-size;
-            line-height:$mobile-header-line-height;
-            font-weight: $mobile-header-font-weight;
-            font-family:avenir;
-            font-style:normal;
-            @include tablet{
-                margin: 0 5rem;
-                padding-bottom:5rem;
-                font-size:90px;
-                line-height:$desktop-tablet-pageHeader-line-height;
-                font-weight:$desktop-tablet-pageHeader-font-weight;
-            }
-            @include desktop{
-                margin: 0 8rem;
-                padding-bottom:5rem;
-                font-size:70px;
-                line-height:$desktop-tablet-pageHeader-line-height;
-                font-weight:$desktop-tablet-pageHeader-font-weight;
-            }
-        }
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flex(row, flex-start, center);
+
+    @include tablet {
+        height: 80vh;
     }
 
+    @include desktop {
+        height: 100vh;
+    }
+
+    &__title {
+        margin: 0 1.5rem;
+        color: #FFFFFF;
+        font-size: $mobile-header-font-size;
+        line-height: $mobile-header-line-height;
+        font-weight: $mobile-header-font-weight;
+        font-family: avenir;
+        font-style: normal;
+
+        @include tablet {
+            margin: 0 5rem;
+            padding-bottom: 5rem;
+            font-size: 90px;
+            line-height: $desktop-tablet-pageHeader-line-height;
+            font-weight: $desktop-tablet-pageHeader-font-weight;
+        }
+
+        @include desktop {
+            margin: 0 8rem;
+            padding-bottom: 5rem;
+            font-size: 70px;
+            line-height: $desktop-tablet-pageHeader-line-height;
+            font-weight: $desktop-tablet-pageHeader-font-weight;
+        }
+    }
+}

@@ -5,17 +5,17 @@
 .comment {
     font-family: avenir;
     font-style: normal;
-    padding-left:2rem;
-    padding-right:2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
     @include tablet {
-    padding-left:0rem;
-    padding-right:0rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
 
     @include desktop {
-    padding-left:0;
-    padding-right:0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     &__title {
@@ -35,17 +35,18 @@
 
     &__input {
         @include flex(row, center, flex-start);
-        border-bottom:1px solid #E1E1E1;
+        border-bottom: 1px solid #E1E1E1;
+
         @include tablet {
             @include flex(row, center, flex-start);
-            margin:auto;
-            width:70%;
+            margin: auto;
+            width: 70%;
         }
 
         @include desktop {
             @include flex(row, center, flex-start);
-            margin:auto;
-            width:30%;
+            margin: auto;
+            width: 30%;
         }
 
         &-profile {
@@ -55,28 +56,13 @@
             object-position: 20% 0;
             border-radius: 50%;
             background-color: #E1E1E1;
-            // position: relative;
-            // top: 1.6rem;
-            // left: 0.5rem;
-            margin-top:1rem;
-
-            // @include tablet {
-            //     position: relative;
-            //     top: 1.8rem;
-            //     left: -0.5rem;
-            // }
-
-            // @include desktop {
-            //     position: relative;
-            //     top: 1.8rem;
-            //     left: -0.5rem;
-            // }
+            margin-top: 1rem;
         }
 
         &-form {
             width: 80%;
             @include flex(column, center, center);
-            margin-left:2rem;
+            margin-left: 2rem;
 
             @include tablet {
                 width: 100%;
@@ -196,24 +182,28 @@
 
 
     &__display {
-        margin-bottom:1rem;
+        margin-bottom: 1rem;
+
         @include tablet {
-            @include flex(column,center,center);
+            @include flex(column, center, center);
         }
 
         @include desktop {
-            @include flex(column,center,center);
+            @include flex(column, center, center);
         }
 
         &-post {
             @include flex(row, center, flex-start);
-            border-bottom:1px solid #E1E1E1;
-            @include tablet{
-                width:70%;
+            border-bottom: 1px solid #E1E1E1;
+
+            @include tablet {
+                width: 70%;
             }
-            @include desktop{
-                width:30%;
+
+            @include desktop {
+                width: 30%;
             }
+
             &-profile {
                 height: 30px;
                 width: 30px;
@@ -221,30 +211,36 @@
                 object-position: 20% 0;
                 border-radius: 50%;
                 background-color: #E1E1E1;
-                margin-top:1rem;
+                margin-top: 1rem;
             }
-            &-content{
-                width:80%;
-                margin-left:2rem;
-                @include tablet{
-                    width:100%;
-                    margin-left:1.5rem;
+
+            &-content {
+                width: 80%;
+                margin-left: 2rem;
+
+                @include tablet {
+                    width: 100%;
+                    margin-left: 1.5rem;
                 }
-                @include desktop{
-                    width:90%;
-                    margin-left:1.5rem;
+
+                @include desktop {
+                    width: 90%;
+                    margin-left: 1.5rem;
                 }
-                &-title-date-container{
-                    @include flex(row,space-between,center);
-                    margin-top:1rem;
+
+                &-title-date-container {
+                    @include flex(row, space-between, center);
+                    margin-top: 1rem;
                 }
-                &-title{
+
+                &-title {
                     margin-bottom: 0;
-                    margin-top:0;
-                    color:$primary-color;
+                    margin-top: 0;
+                    color: $primary-color;
                 }
-                &-date{
-                    color:#AFAFAF;
+
+                &-date {
+                    color: #AFAFAF;
                 }
             }
         }
