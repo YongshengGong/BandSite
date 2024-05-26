@@ -59,7 +59,12 @@ for (let i = 0; i < res.length; i++) {
     date.classList.add("shows__tickets-ticket-date");
     let dateTitle = document.createElement("span");
     dateTitle.classList.add("shows__tickets-ticket-date-title");
-    dateTitle.classList.add(res[i].hideTitle);
+    if(i===0){
+    dateTitle.classList.add("visible");
+    }
+    else{
+    dateTitle.classList.add("hide");
+    }
     dateTitle.textContent = "DATE";
     let dateContent = document.createElement("span");
     dateContent.classList.add("shows__tickets-ticket-date-content");
@@ -70,7 +75,12 @@ for (let i = 0; i < res.length; i++) {
     venue.classList.add("shows__tickets-ticket-venue");
     let venueTitle = document.createElement("span");
     venueTitle.classList.add("shows__tickets-ticket-venue-title");
-    venueTitle.classList.add(res[i].hideTitle);
+    if(i===0){
+        venueTitle.classList.add("visible");
+        }
+        else{
+        venueTitle.classList.add("hide");
+        }
     venueTitle.textContent = "VENUE";
     let venueContent = document.createElement("span");
     venueContent.classList.add("shows__tickets-ticket-venue-content");
@@ -81,7 +91,12 @@ for (let i = 0; i < res.length; i++) {
     eventLocation.classList.add("shows__tickets-ticket-eventLocation");
     let eventLocationTitle = document.createElement("span");
     eventLocationTitle.classList.add("shows__tickets-ticket-eventLocation-title");
-    eventLocationTitle.classList.add(res[i].hideTitle);
+    if(i===0){
+        eventLocationTitle.classList.add("visible");
+        }
+        else{
+        eventLocationTitle.classList.add("hide");
+        }
     eventLocationTitle.textContent = "LOCATION";
     let eventLocationContent = document.createElement("span");
     eventLocationContent.classList.add("shows__tickets-ticket-eventLocation-content");
