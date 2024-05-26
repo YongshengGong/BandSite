@@ -83,7 +83,7 @@ function addComment(r) {
  comment.textContent=r.comment;
 let date=document.createElement("span");
 date.classList.add("comment__display-post-content-date");
-date.textContent=r.timestamp;
+date.textContent=new Date(r.timestamp).toLocaleDateString('en-US');
 let titleDateContainer=document.createElement("section");
 titleDateContainer.classList.add("comment__display-post-content-title-date-container");
 titleDateContainer.appendChild(userName);
