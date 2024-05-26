@@ -61,7 +61,10 @@ async function fetchComment(){
     try{
         const res=await instance.getComment();
         console.log(res);
-        for(const r of res){
+        let defaultComments=res.splice(0,3);
+        res.reverse();
+        let finalRes=[...res,...defaultComments];
+        for(const r of finalRes){
          addComment(r);
         }
     }
