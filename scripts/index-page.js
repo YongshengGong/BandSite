@@ -40,7 +40,7 @@ form.addEventListener("submit",e=>{
     // userComment.unshift(obj);
     postComment(obj);
     commentDisplay.innerHTML = '';
-    fetchComment();
+    // fetchComment();
     e.target.userName.value="";
     e.target.textArea.value="";
     e.target.userName.style.borderColor="#E1E1E1";
@@ -51,6 +51,7 @@ async function postComment(obj){
     try{
       const res=await instance.postComment(obj);
       console.log(res);
+      fetchComment();
     }
     catch(error){
         console.log(error);
@@ -109,7 +110,7 @@ async function Delete(id){
     const res1=await new BandSiteApi(api_key).delete(id);
     console.log(res1);
 }
-// Delete("07c72e33-9927-4288-9e3e-0e3577a4f626")
+// Delete("0247c91f-e8ee-4c88-a0bc-1c92f67a67fb")
 
 
 
