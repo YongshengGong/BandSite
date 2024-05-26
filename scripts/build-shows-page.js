@@ -1,42 +1,45 @@
-let arr = [
-    {
-        date: "Mon Sept 09 2024",
-        venue: "Ronald Lane",
-        eventLocation: "San Francisco, CA",
-        hideTitle:"visible"
-    },
-    {
-        date: "Tue Sept 17 2024",
-        venue: "Pier 3 East",
-        eventLocation: "San Francisco, CA",
-        hideTitle:"hide"
-    },
-    {
-        date: "Sat Oct 12 2024",
-        venue: "View Lounge",
-        eventLocation: "San Francisco, CA",
-        hideTitle:"hide"
-    },
-    {
-        date: "Sat Nov 16 2024",
-        venue: "Hyatt Agency",
-        eventLocation: "San Francisco, CA",
-        hideTitle:"hide"
-    },
-    {
-        date: "Fri Nov 29 2024",
-        venue: "Moscow Center",
-        eventLocation: "San Francisco, CA",
-        hideTitle:"hide"
-    },
-    {
-        date: "Wed Dec 18 2024",
-        venue: "Press Club ",
-        eventLocation: "San Francisco, CA",
-        hideTitle:"hide"
-    },
-];
-
+// let arr = [
+//     {
+//         date: "Mon Sept 09 2024",
+//         venue: "Ronald Lane",
+//         eventLocation: "San Francisco, CA",
+//         hideTitle:"visible"
+//     },
+//     {
+//         date: "Tue Sept 17 2024",
+//         venue: "Pier 3 East",
+//         eventLocation: "San Francisco, CA",
+//         hideTitle:"hide"
+//     },
+//     {
+//         date: "Sat Oct 12 2024",
+//         venue: "View Lounge",
+//         eventLocation: "San Francisco, CA",
+//         hideTitle:"hide"
+//     },
+//     {
+//         date: "Sat Nov 16 2024",
+//         venue: "Hyatt Agency",
+//         eventLocation: "San Francisco, CA",
+//         hideTitle:"hide"
+//     },
+//     {
+//         date: "Fri Nov 29 2024",
+//         venue: "Moscow Center",
+//         eventLocation: "San Francisco, CA",
+//         hideTitle:"hide"
+//     },
+//     {
+//         date: "Wed Dec 18 2024",
+//         venue: "Press Club ",
+//         eventLocation: "San Francisco, CA",
+//         hideTitle:"hide"
+//     },
+// ];
+import BandSiteApi from "./band-site-api.js";
+const api_key="324d476a-da96-4fa9-a553-491afa44ae75";
+const instance=new BandSiteApi(api_key);
+async function shows(){
 let shows = document.querySelector(".shows");
 let tickets = document.createElement("section");
 tickets.classList.add("shows__tickets");
@@ -45,7 +48,9 @@ showsTitle.classList.add("shows__title");
 showsTitle.textContent="Shows";
 shows.appendChild(showsTitle);
 
-for (let i = 0; i < arr.length; i++) {
+const res=await instance.getShows();
+console.log(res);
+for (let i = 0; i < res.length; i++) {
     let ticket = document.createElement("article");
     ticket.classList.add("shows__tickets-ticket");
     tickets.appendChild(ticket);
@@ -54,7 +59,7 @@ for (let i = 0; i < arr.length; i++) {
     date.classList.add("shows__tickets-ticket-date");
     let dateTitle = document.createElement("span");
     dateTitle.classList.add("shows__tickets-ticket-date-title");
-    dateTitle.classList.add(arr[i].hideTitle);
+    dateTitle.classList.add(res[i].hideTitle);
     dateTitle.textContent = "DATE";
     let dateContent = document.createElement("span");
     dateContent.classList.add("shows__tickets-ticket-date-content");
@@ -65,7 +70,7 @@ for (let i = 0; i < arr.length; i++) {
     venue.classList.add("shows__tickets-ticket-venue");
     let venueTitle = document.createElement("span");
     venueTitle.classList.add("shows__tickets-ticket-venue-title");
-    venueTitle.classList.add(arr[i].hideTitle);
+    venueTitle.classList.add(res[i].hideTitle);
     venueTitle.textContent = "VENUE";
     let venueContent = document.createElement("span");
     venueContent.classList.add("shows__tickets-ticket-venue-content");
@@ -76,7 +81,7 @@ for (let i = 0; i < arr.length; i++) {
     eventLocation.classList.add("shows__tickets-ticket-eventLocation");
     let eventLocationTitle = document.createElement("span");
     eventLocationTitle.classList.add("shows__tickets-ticket-eventLocation-title");
-    eventLocationTitle.classList.add(arr[i].hideTitle);
+    eventLocationTitle.classList.add(res[i].hideTitle);
     eventLocationTitle.textContent = "LOCATION";
     let eventLocationContent = document.createElement("span");
     eventLocationContent.classList.add("shows__tickets-ticket-eventLocation-content");
@@ -91,9 +96,11 @@ for (let i = 0; i < arr.length; i++) {
     ticket.appendChild(venue);
     ticket.appendChild(eventLocation);
     ticket.appendChild(button);
-    dateContent.textContent = arr[i].date;
-    venueContent.textContent = arr[i].venue;
-    eventLocationContent.textContent = arr[i].eventLocation;
+    dateContent.textContent = res[i].date;
+    venueContent.textContent = res[i].place;
+    eventLocationContent.textContent = res[i].location;
 }
 
 shows.appendChild(tickets);
+}
+shows();
