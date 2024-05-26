@@ -105,56 +105,16 @@ commentDisplay.appendChild(article);
 fetchComment();
 // addComment(userComment);
 
-// async function Delete(id){
-//     const res1=await new BandSiteApi(api_key).delete(id);
-//     console.log(res1);
-// }
-// Delete("8f451fbe-b288-4346-8092-e6ca40f334ed")
-// 40980fa9-ce84-4c20-aa20-3f207c6ddd9b
-// 8f451fbe-b288-4346-8092-e6ca40f334ed
-// 434b6795-67ba-4c3b-aa4b-1319202885fd
-// 9c715221-686f-4f41-99e8-ca5e256dfd43
-// 71c537e7-f306-4776-a620-e9feb2f4b019
-// 151bb815-b13b-418c-8370-4ed94136bfeb
-// 18429f25-e248-4ef5-9882-2ea649e30727
-// d87c876c-8953-4460-bfee-22d56ba5341b
-// 68448592-73a1-4739-8183-6cb7a9a58f71
-// 549609ca-7d1e-4b48-8be9-99560c603e43
-// d88be559-1750-4ec3-b582-62c59d8fc841
-// aad46581-7392-48e9-9a27-a825b15d82f0
-// d0852980-a0f4-4005-8302-0ad5ee2f82ff
-// 8b2fcddd-23b4-4787-bc61-4f1294472cad
-// 310d2b75-9e97-428c-9ebe-b8f1dcc3e1e2
-// 905c7769-a389-4630-a246-28a9428abe34
-// 60d134b4-4b80-412b-a192-e457e4847994
-// 60d134b4-4b80-412b-a192-e457e4847994
-// 9e9aa506-b396-44e0-add1-5a9ae6a1f28f
-// c28307e5-410a-4a07-9dc6-0be6cedda4f1
-// 76779413-43f8-47da-a195-b161797b62c1
-// f52ebbfe-1662-4a5a-bde1-2fc0195a8d23
-// 74d361f4-e470-4d9c-b033-e44da2fa2eaa
-// 002aaca1-d756-4ba0-9e74-e34262fb9fce
-// 73d906c0-d514-4a62-ab2f-50cefdfa6fed
-// 0d22df3f-89a6-40df-8bc8-96ad37061135
-// ad7ae18a-e18a-4500-86f3-e81e2b801e7f
-// bb56a28b-d516-4334-a75f-612393b1504a
-// 2932d349-ff53-4aae-bc5b-edff4b36f8c8
-// 42c86ec3-e161-454b-8efa-41507642ce8d
-// 26e20f66-c6d9-4b11-8f0e-87d502570491
-// 6c2d46fa-5443-47f6-b900-9d44879b4517
-// 9415b8e2-153d-4448-a70b-13f222500000
-// f0426c4f-cc83-4cb7-bf3d-cff7ae5c64fc
-// 48966d48-7625-459e-bd8e-a76e3cb06ee9
-// b2731b77-5fd3-4dd6-bf56-9c9e28f43420
-// 568ffc87-2c55-4302-934f-ebaa516fc0db
-// 23299593-b53c-4a34-b5eb-b4322ffb1113
-// 56c41841-ad2c-46e5-89e7-607d1a93db0d
-// 7468484c-681a-42d5-a3eb-0cacbfed9cf5
-// 20c983a5-d48e-4044-b738-6e6302dd408d
-// ecfc600b-01eb-4eff-b0a7-6b190e1daca0
-// 1e94d92c-2b56-416d-8f9e-02dcaec1aab0
-// 04cb74ab-0e19-4cc3-a891-ff682c0d8dd7
-// 10abf589-c4c4-4a98-9254-ac9897ab93b0
-// d2c5fb1c-d4f9-4f85-893e-5df49adb81ba
-// cf446960-9dcd-4507-ac47-2cc55664d659
-// 36a83aea-3b09-41c2-a06c-d8823c9a3b84
+async function Delete(id){
+    const res1=await new BandSiteApi(api_key).delete(id);
+    console.log(res1);
+}
+// Delete("07c72e33-9927-4288-9e3e-0e3577a4f626")
+
+
+
+
+
+
+
+

@@ -29,14 +29,14 @@ class BandSiteApi{
         console.log(error);
        }
        }
-    //    async delete(id){
-    //     try{
-    //      const res=await axios.delete(`${this.baseUrl}/comments/${id}?api_key=${this.apiKey}`);
-    //      return res;
-    //    }
-    //    catch(error){
-    //     console.log(error);
-    //    }
-    //    }
+       async delete(id){
+        try{
+         const res=await axios.delete(`${this.baseUrl}/comments/${id}?api_key=${this.apiKey}`);
+         return res;
+       }
+       catch(error){
+        console.log(error);
+       }
+       }
 }
 export default BandSiteApi;
