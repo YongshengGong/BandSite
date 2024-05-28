@@ -151,6 +151,8 @@
                 font-size: $mobile-comment-labels-buttons-font-size;
                 line-height: $mobile-comment-labels-buttons-line-height;
                 font-weight: $mobile-comment-labels-buttons-font-weight;
+                font-family: avenir;
+                font-style: normal;
 
                 @include tablet {
                     padding-left: 40px;
