@@ -1,6 +1,7 @@
 import BandSiteApi from "./band-site-api.js";
 const api_key = "324d476a-da96-4fa9-a553-491afa44ae75";
 const instance = new BandSiteApi(api_key);
+
 async function shows() {
     let shows = document.querySelector(".shows");
     let tickets = document.createElement("section");
@@ -81,3 +82,4 @@ async function shows() {
     shows.appendChild(tickets);
 }
 shows();
+
